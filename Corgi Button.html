@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+    function add_google_logo() {
+    var src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/WelshCorgi.jpeg/220px-WelshCorgi.jpeg";
+    show_image("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/WelshCorgi.jpeg/220px-WelshCorgi.jpeg", 160,200, "Google Logo");
+}
+    function show_image(src, width, height, alt) {
+var img = document.createElement("img");
+img.src = src;
+img.width = width;
+img.height = height;
+img.alt = alt;
+
+// This next line will just add it to the <body> tag
+document.body.appendChild(img);
+}
+
+</script>
+  </head>
+<body>
+  <button onclick="add_google_logo();">Add Corgi Picture</button>
+    </body>
+  </html>
